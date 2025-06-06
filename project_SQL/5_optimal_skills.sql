@@ -29,4 +29,4 @@ FROM top_demand
     INNER JOIN top_pay ON top_demand.skill_id = top_pay.skill_id
 ORDER BY demand_count DESC,
     average_pay DESC
-LIMIT 10
+LIMIT 25
