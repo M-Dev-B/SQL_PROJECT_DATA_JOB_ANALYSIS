@@ -27,6 +27,8 @@ SELECT top_demand.skill_id,
     average_pay
 FROM top_demand
     INNER JOIN top_pay ON top_demand.skill_id = top_pay.skill_id
+WHERE 
+    demand_count > 10
 ORDER BY demand_count DESC,
     average_pay DESC
 LIMIT 25
