@@ -6,5 +6,5 @@ FROM job_postings_fact
 WHERE job_title_short = 'Data Analyst'
     AND job_work_from_home IS TRUE
 GROUP BY skills
-ORDER BY skill_count DESC
+ORDER BY demand_count DESC
 LIMIT 8
